@@ -1,0 +1,51 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  width: 100vw;
+  height: 100vh;
+
+  .logoContainer {
+    height: 20vh;
+    text-align: center;
+
+    .logo {
+      cursor: pointer;
+      height: 100%;
+    }
+  }
+
+  .header:hover .mainImageContainer {
+    opacity: .7;
+  }
+
+  .mainImageContainer {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+
+    .mainImage {
+      height: 100%;
+      width: 100%;
+      object-position: 0 27%;
+      object-fit: cover;
+      opacity: 1;
+
+      
+    }
+
+    .header {
+      position: absolute;
+      top: 0;
+
+      &:hover {
+        color: #fff;
+      }
+
+      
+
+    }
+    
+  }
+  
+ 
+}

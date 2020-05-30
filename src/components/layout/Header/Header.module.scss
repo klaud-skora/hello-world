@@ -1,0 +1,21 @@
+@import '../../../styles/settings.scss';
+
+.root {  
+  color: #fff;
+  top: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+ 
+  .navigation {
+    display: flex;
+
+    p {
+      margin-right: 30px;
+      cursor: pointer;
+    }
+    // flex-direction: column;
+    // padding: 0 100px;
+    // justify-content: space-between; 
+  }
+}
