@@ -1,0 +1,35 @@
+@import '../../../styles/settings.scss';
+
+.root {    
+  // font-weight: 600;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  
+  p {
+    color: #fff;
+    font-size: 10px;
+    text-shadow: .2px .1px .1px $colorMain;
+  }
+
+  .icons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 10%;
+    padding: 0 20px;;
+  }
+
+  .icon {
+    color: #fff;
+    font-size: 22px;
+
+    &:hover {
+      font-size: 25px;
+    }
+  }
+
+  
+
+}

@@ -2,14 +2,13 @@
 
 .root {  
   font-weight: 600;
-  height: 60px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
   .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-
+    
     .link {
       color: #fff;
       margin-right: 30px;

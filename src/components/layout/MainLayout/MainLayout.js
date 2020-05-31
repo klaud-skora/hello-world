@@ -7,6 +7,7 @@ import clsx from 'clsx';
 
 
 import { Header } from '../Header/Header';
+import { Footer } from '../Footer/Footer';
 
 const Component = ({ children }) => {
 
@@ -29,9 +30,10 @@ const Component = ({ children }) => {
 
   return(
     <div className={styles.root}>
-      <Header className={isSticky ?  clsx(styles.header, styles.sticky) : styles.header}/>
+      <Header className={isSticky ? clsx(styles.header, styles.sticky) : styles.header}/>
       <div className={styles.logoContainer}><img className={styles.logo} src={logo} alt='ws_logo' /></div>
       {children}
+      <Footer className={styles.footer} />
     </div>
   );
   
