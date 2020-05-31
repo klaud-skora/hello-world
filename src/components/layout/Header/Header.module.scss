@@ -4,6 +4,7 @@
   font-weight: 600;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   
@@ -20,6 +21,14 @@
 
     .link:hover {
       color: $colorMain;
+    }
+  }
+
+  @media (max-height: 740px) {
+    opacity: .5;
+    .navigation  .link{
+      width: 100%;
+      justify-content: flex-start;
     }
   }
 }

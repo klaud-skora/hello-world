@@ -1,24 +1,26 @@
 @import '../../../styles/settings.scss';
 
 .root {     
-  width: 100%;
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
   justify-content: space-around;
   z-index: 100;
+  width: 100vw;
   
   p {
     color: #fff;
-    font-size: 10px;
-    text-shadow: .2px .1px .1px $colorMain;
+    font-size: 12px;
+    font-weight: 600;
+    text-shadow: .1px .1px .1px $colorMain;
   }
 
   .icons {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    width: 10%;
-    padding: 0 20px;;
+    width: 200px;
+    padding: 0 10px;;
   }
 
   .icon {

@@ -11,7 +11,7 @@
   
 
   .about {
-    padding: 200px;
+    padding: 150px;
     z-index: 999;
     text-shadow: .2px .5px .5px lighten($colorMain, 15%);
     line-height: 2.2rem;
@@ -19,6 +19,12 @@
 
   h2, p {
     z-index: 100;
+  }
+
+  @media (max-width: 740px) {
+    .about {
+      padding: 150px 50px;
+    }
   }
 }
 
