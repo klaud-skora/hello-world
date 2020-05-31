@@ -32,8 +32,7 @@ const Component = ({ children }) => {
       <Header className={isSticky ?  clsx(styles.header, styles.sticky) : styles.header}/>
       <div className={styles.logoContainer}><img className={styles.logo} src={logo} alt='ws_logo' /></div>
       {children}
-   </div>
-
+    </div>
   );
   
 };

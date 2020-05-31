@@ -1,4 +1,8 @@
 import React from 'react';
+
+import { NavLink } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
+
 import styles from './Header.module.scss';
 
 import clsx from 'clsx';
@@ -7,8 +11,9 @@ const Component = ({className}) => {
   return(
     <div className={clsx(className, styles.root)}>
       <nav className={styles.navigation}>
-        <p className={styles.link} >Nasz świat</p>
-        <p>Ostatnio w podróży</p>
+        <Button component={NavLink} exact to={process.env.PUBLIC_URL +'/nasz-swiat'} activeClassName='active' className={styles.link}>Nasz świat</Button>
+        <Button component={NavLink} exact to={process.env.PUBLIC_URL +'/ostatnio-w-podrozy'} activeClassName='active' className={styles.link}>Ostatnio w podróży</Button>
+        <Button component={NavLink} exact to={process.env.PUBLIC_URL +'/posty'} activeClassName='active' className={styles.link}>Posty</Button>
       </nav>
     </div>
   );
