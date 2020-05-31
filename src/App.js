@@ -10,6 +10,7 @@ import { MainLayout } from './components/layout/MainLayout/MainLayout';
 
 // import routes
 import { Homepage } from './components/views/HomePage/Homepage';
+import { OurWorld } from './components/views/OurWorld/OurWorld';
 
 // store
 import { store } from './redux/store';
@@ -31,6 +32,7 @@ class App extends React.Component {
               <MainLayout>
                 <Switch>
                   <Route exact path="/" component={ Homepage } />
+                  <Route exact path="/nasz-swiat" component={ OurWorld } />
                 </Switch>
               </MainLayout>
             </ThemeProvider>

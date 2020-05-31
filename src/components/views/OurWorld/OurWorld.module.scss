@@ -1,0 +1,24 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  position: relative;
+  min-height: calc(100vh - #{$logoHeight});
+  width: 100vw;
+  // background-image: url('./ws.jpeg');
+  background-image: linear-gradient(rgba(177, 217, 245, 0.764),rgba(205, 207, 181, 0.764)), url('./ws.jpeg');
+  background-size: cover;
+  background-position: center;
+  
+
+  .about {
+    padding: 200px;
+    z-index: 999;
+    text-shadow: .2px .5px .5px lighten($colorMain, 15%);
+    line-height: 2.2rem;
+  }
+
+  h2, p {
+    z-index: 100;
+  }
+}
+

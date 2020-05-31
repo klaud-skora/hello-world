@@ -3,6 +3,7 @@
 .root {
   height: calc(100vh - #{$logoHeight});
   text-align: center;
+  position: relative;
 
   .mainImageContainer {
     width: 100%;
@@ -18,7 +19,6 @@
       width: 100%;
       background-color: lighten($colorMain, 50%);
       animation: background 6s forwards;
-
     }
 
     .mainImage {
@@ -35,20 +35,14 @@
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: lighten($colorMain, 79%);
+    color: $colorLight;
     text-shadow: 2px 2px 6px black;
   }
   
 }
 
 @keyframes background {
-  0% {
-    opacity: .4;
-  }
-  50% {
-    opacity: .2;
-  }
-  100% {
-    opacity: 0;
-  }
+  0% { opacity: .15; }
+  50% { opacity: .1; }
+  100% { opacity: 0; }
 }

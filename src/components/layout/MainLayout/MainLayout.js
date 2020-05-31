@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
+import { Link } from 'react-router-dom';
+
 import logo from './witamy_logo_napis.svg';
 import styles from './MainLayout.module.scss';
 import clsx from 'clsx';
@@ -31,7 +33,7 @@ const Component = ({ children }) => {
   return(
     <div className={styles.root}>
       <Header className={isSticky ? clsx(styles.header, styles.sticky) : styles.header}/>
-      <div className={styles.logoContainer}><img className={styles.logo} src={logo} alt='ws_logo' /></div>
+      <Link exact to={process.env.PUBLIC_URL +'/'}><div className={styles.logoContainer}><img className={styles.logo} src={logo} alt='ws_logo' /></div></Link>
       {children}
       <Footer className={styles.footer} />
     </div>

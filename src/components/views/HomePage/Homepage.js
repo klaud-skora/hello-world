@@ -1,7 +1,4 @@
 import React from 'react';
-
-// import logo from './witamy_logo_napis.svg';
-// import { Header } from '../../layout/Header/Header'; 
 import styles from './Homepage.module.scss';
 
 class Component extends React.Component {
