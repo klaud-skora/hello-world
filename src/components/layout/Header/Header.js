@@ -12,7 +12,7 @@ const Component = ({className}) => {
     <div className={clsx(className, styles.root)}>
       <nav className={styles.navigation}>
         <Button component={NavLink} exact to={process.env.PUBLIC_URL +'/nasz-swiat'} activeClassName='active' className={styles.link}>Nasz świat</Button>
-        <Button component={NavLink} exact to={process.env.PUBLIC_URL +'/ostatnio-w-podrozy'} activeClassName='active' className={styles.link}>Ostatnio w podróży</Button>
+        <Button component={NavLink} exact to={process.env.PUBLIC_URL +'/europa'} activeClassName='active' className={styles.link}>Europa</Button>
         <Button component={NavLink} exact to={process.env.PUBLIC_URL +'/posty'} activeClassName='active' className={styles.link}>Posty</Button>
       </nav>
     </div>

@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 import logo from './witamy_logo_napis.svg';
 import styles from './MainLayout.module.scss';
 import clsx from 'clsx';
-
+import { withRouter } from "react-router";
 
 import { Header } from '../Header/Header';
 import { Footer } from '../Footer/Footer';
 
-const Component = ({ children }) => {
+const Component = ({ children, location }) => {
 
   const [isSticky, setSticky] = useState(false);
 
@@ -32,10 +32,10 @@ const Component = ({ children }) => {
 
   return(
     <div className={styles.root}>
-      <Header className={isSticky ? clsx(styles.header, styles.sticky) : styles.header}/>
-      <Link exact to={process.env.PUBLIC_URL +'/'}><div className={styles.logoContainer}><img className={styles.logo} src={logo} alt='ws_logo' /></div></Link>
+      <Header className={clsx(isSticky ? clsx(styles.header, styles.sticky) : styles.header, location.pathname !== '/' ? styles.headerTape: '') }/>
+      <Link to={process.env.PUBLIC_URL +'/'}><div className={styles.logoContainer}><img className={styles.logo} src={logo} alt='ws_logo' /></div></Link>
       {children}
-      <Footer className={styles.footer} />
+      <Footer className={location.pathname !== '/' ? clsx(styles.footerTape, styles.footer) : styles.footer} />
     </div>
   );
   
@@ -45,7 +45,9 @@ Component.propTypes = {
   children: PropTypes.node,
 }
 
+const ComponentWithRouter = withRouter(Component);
+
 export {
-  Component as MainLayout,
+  ComponentWithRouter as MainLayout,
   Component as MainLayoutComponent,
 };

@@ -4,16 +4,17 @@
   position: relative;
   min-height: calc(100vh - #{$logoHeight});
   width: 100vw;
-  // background-image: url('./ws.jpeg');
-  background-image: linear-gradient(rgba(177, 217, 245, 0.764),rgba(205, 207, 181, 0.764)), url('./ws.jpeg');
+  background-image: linear-gradient(rgba(250, 198, 216, 0.39),rgba(129, 135, 136, 0.9)), url('./ws.jpeg');
   background-size: cover;
   background-position: center;
-  
+  text-shadow: .2px .2px 5px rgb(178, 165, 185), .5px .4px 2px $colorMain;
 
   .about {
     padding: 150px;
     z-index: 999;
-    text-shadow: .2px .5px .5px lighten($colorMain, 15%);
+    font-weight: 900;
+    letter-spacing: .1rem;
+    font-size: 20px;
     line-height: 2.2rem;
   }
 

@@ -7,6 +7,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding: 0 10px;
   
   .navigation {
     
@@ -16,7 +17,7 @@
       margin-right: 30px;
       cursor: pointer;
       font-size: 18px;
-      text-shadow: .2px .2px .5px $colorMain;
+      text-shadow: 0.1px 0.5px 5px #032a3f
     }
 
     .link:hover {
@@ -24,10 +25,10 @@
     }
   }
 
-  @media (max-height: 740px) {
-    opacity: .5;
+  @media (max-width: 740px) {
+    
     .navigation  .link{
-      width: 100%;
+      min-width: 100%;
       justify-content: flex-start;
     }
   }
