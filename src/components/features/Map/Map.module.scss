@@ -1,0 +1,8 @@
+@import '../../../styles/settings.scss';
+
+.map {
+  position: relative;
+  height: calc(100vh - #{$logoHeight});
+  width: 900px;
+  overflow: hidden;
+}
